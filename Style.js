@@ -27,7 +27,7 @@ project.forEach((data,ind)=>{
 });
 
 
-let skill=[{"name":"HTML","Level":"90%","info":"","img":"html.png"},{"name":"Css","Level":"91%","info":"","img":"css.png"},{"name":"Js","Level":"92%","info":"","img":"js.png"},{"name":"Java","Level":"93%","info":"","img":"java.png"},{"name":"DSA","Level":"94%","info":"","img":"dsa.png"},{"name":"Bootstrap","Level":"95%","info":"","img":"bootstrap.png"}];
+let skill=[{"name":"HTML","Level":"80%","info":"","img":"html.png"},{"name":"Css","Level":"75%","info":"","img":"css.png"},{"name":"Js","Level":"83%","info":"","img":"js.png"},{"name":"Java","Level":"90%","info":"","img":"java.png"},{"name":"DSA","Level":"85%","info":"","img":"dsa.png"},{"name":"Bootstrap","Level":"90%","info":"","img":"bootstrap.png"}];
 skill.forEach((data,ind)=>{
     let skillContainer=document.getElementById("skills-container");
     let tempHtml=`<div class="skill-card">
