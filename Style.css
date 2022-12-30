@@ -865,3 +865,8 @@ body{
         padding: 20px;
     }
 }
+@media (max-width:999px) and (min-width:769px) {
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
