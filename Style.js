@@ -27,14 +27,21 @@ project.forEach((data,ind)=>{
 });
 
 
-let skill=[{"name":"HTML","Level":"80%","info":"","img":"html.png"},{"name":"Css","Level":"75%","info":"","img":"css.png"},{"name":"Js","Level":"83%","info":"","img":"js.png"},{"name":"Java","Level":"90%","info":"","img":"java.png"},{"name":"DSA","Level":"85%","info":"","img":"dsa.png"},{"name":"Bootstrap","Level":"90%","info":"","img":"bootstrap.png"}];
+let skill=[{"name":"HTML","Level":"80","info":"","img":"html.png"},{"name":"Css","Level":"75","info":"","img":"css.png"},{"name":"Js","Level":"83","info":"","img":"js.png"},{"name":"Java","Level":"90","info":"","img":"java.png"},{"name":"DSA","Level":"85","info":"","img":"dsa.png"},{"name":"Bootstrap","Level":"90","info":"","img":"bootstrap.png"}];
 skill.forEach((data,ind)=>{
-    let skillContainer=document.getElementById("skills-container");
-    let tempHtml=`<div class="skill-card">
-    <img src="${data.img}" class="skill-img" alt="">
-    <div class="skill-level">${data.Level}</div>
-    <h1 class="skill-name">${data.name}</h1>
-    <p class="skill-info">${data.info}</p>
+    let skillContainer=document.getElementById("sk");
+    let tempHtml=`<div class="skcard">
+    <div class="percent" style="--clr:#04fc43;--num:${data.Level}">
+        <div class="dot"></div>
+        <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+        <div class="number">
+            <h2>${data.Level}%</h2>
+            <p>${data.name}</p>
+        </div>
+    </div>
 </div>`
 skillContainer.insertAdjacentHTML('beforeend',tempHtml);
 });
