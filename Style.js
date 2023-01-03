@@ -1,9 +1,7 @@
 
 
 
-let project=[{"tiltle":"01","info":"Snake Game","git":"https://github.com/AshishRaj0602/Snake-game","live":"https://verdant-axolotl-0ccb2e.netlify.app/"},{"tiltle":"02","info":"Profile card UI","git":"https://github.com/AshishRaj0602/cards","live":"https://famous-kringle-637b32.netlify.app/"},{"tiltle":"03","info":"community card","live":"https://prismatic-rolypoly-2f827f.netlify.app/","git":"https://github.com/AshishRaj0602/React-Subscription-App---CSS-Gradients-CSS-Shadows-CSS-text-effects-Pre-Flexb---grtn19jsomhq"},{"tiltle":"04","info":"food recipie","git":"https://github.com/AshishRaj0602/food-Recipes","live":"https://kaleidoscopic-tiramisu-70bddf.netlify.app/"}];
-console.log(project[1].info);
-
+let project=[{"tiltle":"01","info":"Snake Game","git":"https://github.com/AshishRaj0602/Snake-game","live":"https://verdant-axolotl-0ccb2e.netlify.app/"},{"tiltle":"02","info":"Profile card UI","git":"https://github.com/AshishRaj0602/cards","live":"https://famous-kringle-637b32.netlify.app/"},{"tiltle":"03","info":"community card","live":"https://prismatic-rolypoly-2f827f.netlify.app/","git":"https://github.com/AshishRaj0602/React-Subscription-App---CSS-Gradients-CSS-Shadows-CSS-text-effects-Pre-Flexb---grtn19jsomhq"},{"tiltle":"04","info":"Minesweeper-Game","git":"https://github.com/AshishRaj0602/Minesweeper-Games","live":"https://admirable-tarsier-a20a4e.netlify.app/"}];
 // console.log(projectContainer);
 project.forEach((data,ind)=>{
     // console.log(data);
