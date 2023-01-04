@@ -45,7 +45,7 @@ body{
   }
   .nav-center {
     width: 90vw;
-    max-width: 1120px;
+    max-width: 1250px;
   }
   .nav-header {
     height: 6rem;
@@ -158,6 +158,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Sofia", sans-serif;
+}
+#subH{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: x-large;
 }
 .home{
     display: grid;
@@ -167,7 +173,7 @@ body{
     width: 100%;
     font-size: x-large;
     padding: 0%;
-    margin-top: 12%;
+    margin-top: 6%;
     margin-left: 10%;
     box-sizing: border-box;
 }
@@ -203,6 +209,8 @@ body{
     margin-top: 20px;
     display: flex;
     list-style: none;
+    position: relative;
+    left: -8px;
 }
 .social-icons > li{
     margin: 1rem;
@@ -242,13 +250,12 @@ body{
 }
 
 .project-heading{
-    font-size: 100px;
-    background: #252525;
+    font-size: 60px;
+    font-weight: 300;
     text-transform: capitalize;
     text-align: center;
     margin: 20px 0px;
     display: flex;
-    color: #dfedd4ac;
     justify-content: center;
     background-clip: text;
     -webkit-background-clip: text;
@@ -468,8 +475,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 10vh;
-    font-size: 4rem;
-    color: aqua;
+    font-size: 60px;
+    font-weight: 300;
 }
 .skills-container{
     background-color: #f8fafc;
@@ -609,7 +616,7 @@ body{
 }
 
 .timeline .heading{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .card{
@@ -906,67 +913,3 @@ body{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-/* message */
-.alert .inner {
-    display: block;
-    padding: 6px;
-    margin: 6px;
-    border-radius: 3px;
-    border: 1px solid rgb(180,180,180);
-    background-color: rgb(212,212,212);
-  }
-  
-  .alert .close {
-    float: right;
-    margin: 3px 12px 0px 0px;
-    cursor: pointer;
-  }
-  
-  .alert .inner,.alert .close {
-    color: rgb(88,88,88);
-  }
-  
-  .alert input {
-    display: none;
-  }
-  
-  .alert input:checked ~ * {
-    animation-name: dismiss,hide;
-    animation-duration: 300ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: 0s,100ms;
-  }
-  
-  
-  .alert.success .inner {
-    border: 1px solid rgb(214,233,198);
-    background-color: rgb(223,240,216);
-  }
-  
-  .alert.success .inner,.alert.success .close {
-    color: rgb(70,136,71);
-  }
-  
-  @keyframes dismiss {
-    0% {
-      opacity: 1;
-    }
-    90%, 100% {
-      opacity: 0;
-      font-size: 0.1px;
-      transform: scale(0);
-    }
-  }
-  
-  @keyframes hide {
-    100% {
-      height: 0px;
-      width: 0px;
-      overflow: hidden;
-      margin: 0px;
-      padding: 0px;
-      border: 0px;
-    }
-  }
