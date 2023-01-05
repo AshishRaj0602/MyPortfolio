@@ -1,7 +1,7 @@
 
 
 
-let project=[{"tiltle":"01","info":"Snake Game","git":"https://github.com/AshishRaj0602/Snake-game","live":"https://verdant-axolotl-0ccb2e.netlify.app/"},{"tiltle":"02","info":"Profile card UI","git":"https://github.com/AshishRaj0602/cards","live":"https://famous-kringle-637b32.netlify.app/"},{"tiltle":"03","info":"community card","live":"https://prismatic-rolypoly-2f827f.netlify.app/","git":"https://github.com/AshishRaj0602/React-Subscription-App---CSS-Gradients-CSS-Shadows-CSS-text-effects-Pre-Flexb---grtn19jsomhq"},{"tiltle":"04","info":"Minesweeper-Game","git":"https://github.com/AshishRaj0602/Minesweeper-Game","live":"https://admirable-tarsier-a20a4e.netlify.app/"}];
+let project=[{"tiltle":"01","info":"Snake Game","git":"https://github.com/AshishRaj0602/Snake-game","live":"https://verdant-axolotl-0ccb2e.netlify.app/"},{"tiltle":"02","info":"Profile card UI","git":"https://github.com/AshishRaj0602/cards","live":"https://famous-kringle-637b32.netlify.app/"},{"tiltle":"03","info":"UI/UX-Portfolio","live":"https://ui-uxportfolio.netlify.app/","git":"https://github.com/AshishRaj0602/UI_UX_Portfolio"},{"tiltle":"04","info":"Minesweeper-Game","git":"https://github.com/AshishRaj0602/Minesweeper-Game","live":"https://admirable-tarsier-a20a4e.netlify.app/"}];
 // console.log(projectContainer);
 project.forEach((data,ind)=>{
     // console.log(data);
@@ -9,7 +9,7 @@ project.forEach((data,ind)=>{
     // console.log("hello"+projectContainer);
     let tempHtml=`<div class="project-card">
     <img src="fi.jpg" class="project-img" alt="">
-    <div class="project-content">
+    <div class="project-content" id="co${data.tiltle}">
         <h1 class="project-title">${data.tiltle}</h1>
         <p class="project-info">
             ${data.info}
@@ -100,3 +100,4 @@ const getElement = (selector) => {
   ab.addEventListener('click', () => {
     navlinks.classList.toggle('show-links')
   })
+
