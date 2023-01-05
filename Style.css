@@ -292,8 +292,8 @@ body{
 
 .project-content{
     position: relative;
+    top: 5%;
     padding: 0px;
-    color: #fff;
     transition: .5s;
     opacity: 0;
 }
@@ -307,9 +307,11 @@ body{
 
 .project-info{
     margin: 40px;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 300;
     line-height: 30px;
     text-align: center;
+    color: #f00;
 }
 
 .project-btn-grp{
@@ -326,8 +328,15 @@ body{
     background: #000;
     color: #fff;
     cursor: pointer;
+    position: relative;
+    top: 110%;
 }
-
+.project-btn:hover{
+    background-color: #4fa0ff;
+}
+.project-btn.live:hover{
+    background-color: #4fa0ff;
+}
 .project-btn.live{
     background: none;
     border: 2px solid #fff;
@@ -340,7 +349,29 @@ body{
 .project-card:hover .project-content{
     opacity: 1;
 }
-
+.project-card:hover #co01{
+    background: url("snk_pro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-card:hover #co02{
+    background: url("profile_card2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+.project-card:hover #co03{
+    background: url("ui_ux.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+.project-card:hover #co04{
+    background: url("Minesweeper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
 
 /* 3 */
 
