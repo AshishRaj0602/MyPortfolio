@@ -338,7 +338,9 @@ textarea.input {
     cursor: pointer;
     transition: 0.3s;
 }
-
+#back:hover{
+  background-color:none;
+}
 @media (max-width: 345px) {
   #back{
     margin-left: 4rem;
